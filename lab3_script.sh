@@ -22,6 +22,10 @@ egrep -o "^[303]{3}-[0-9]{3}-[0-9]{4}$" regex_practice.txt
 #Problem 4 Code:
 #Store a list of all the emails from geocities.com in a new file named "email_results.txt". 
 
-egrep "@geocities.com" $  >> "emails_result.txt"
-echo "Emails were copied"
+echo "Problem 4 stores all emails in 'email_result.txt'"
+echo "Enter a filename:"
+read filename
+echo "enter regex"
+read regex
+egrep "@geocities.com" regex_practice.txt >> email_result.txt
 
